@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #220404, #640b1e, #862230, #db4584, #b11d18);
+}
+
+main {
+    flex: 2;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+h1 {
+    margin: 0 auto;
+    padding-top: 35px;
+    font-size: 2em;
+    color: #FFFFFF;
+}
+
+#results {
+    font-size: 1.1em;
+    color: #FFFFFF;
+    padding-bottom: 1em;
+}
+
+#subjectivity {
+    font-size: 1.1em;
+    color: #FFFFFF;
+}
+
+#score_tag {
+    font-size: 1.1em;
+    color: #FFFFFF;
+}
+
+#agreement {
+    font-size: 1.1em;
+    color: #FFFFFF;
+}
+
+#irony {
+    font-size: 1.1em;
+    color: #FFFFFF;
+}
+
+#confidence {
+    font-size: 1.1em;
+    color: #FFFFFF;   
+}

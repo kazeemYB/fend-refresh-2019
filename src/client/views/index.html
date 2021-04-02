@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+        <meta charset ="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>Analyzing Blog/Article Using MeaningCloud API</h1>
+        <h2 id="invalid"></h2>
+        <header>
+            <div class="">
+                Logo
+            </div>
+            <div class="">
+                navigation
+            </div>
+        </header>
+
+        <main>
+            <div id ="container">
+                <div id="left"></div>
+                <div id="logo"></div>
+                <div id ="right"></div>
+            </div>
+
+            <section>
+                <form id="text" class="" onsubmit="return Client.handleSubmit(event)">
+                    <input id="url" type="text" name="input" value="" onblur="onBlur()" placeholder= "input the url of a blog/article here">
+                    <input type="submit" name="" id="submit" value="Submit to Analyze" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                </form>
+            </section>
+
+            <section id="output_section">
+                <div id="results">FORM RESULTS:
+                    <div id="confidence"></div>
+                    <div id="score_tag"></div>
+                    <div id="agreement"></div>
+                    <div id="subjectivity"></div>
+                    <div id="irony"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2021 by Kazeem YB</p>
+        </footer>
+
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    </body>
+</html>
