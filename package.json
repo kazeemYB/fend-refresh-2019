@@ -14,12 +14,13 @@
   "description": "",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "bootstrap-icons": "^1.4.1",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "file-loader": "^6.2.0",
     "node-fetch": "^2.6.1",
-    "npm": "^7.8.0",
+    "npm": "^7.9.0",
     "webpack": "^5.27.1",
     "webpack-cli": "^3.3.5",
     "workbox-webpack-plugin": "^6.1.2"
