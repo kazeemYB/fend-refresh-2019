@@ -29,7 +29,7 @@
 
             <section>
                 <form id="text" class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="url" type="text" name="input" value="" onblur="onBlur()" placeholder= "input the url of a blog/article here">
+                    <input id="url" type="text" name="input" value="" onblur="blurFunction()" placeholder= "input the url of a blog/article here">
                     <input type="submit" name="" id="submit" value="Submit to Analyze" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
                 </form>
             </section>
@@ -60,6 +60,11 @@
                 });
             }
         </script>
-
+        <script>
+            function blurFunction() {
+                // No focus = Changes the background color of input to yellow
+                document.getElementById("url").style.background = "yellow";
+            }
+        </script>
     </body>
 </html>
