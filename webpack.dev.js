@@ -13,6 +13,7 @@ module.exports = {
     entry: './src/client/index.js',
     mode: 'development',
     devtool: 'source-map',
+    target: 'node',
     stats: 'verbose',
     module: {
         rules: [
