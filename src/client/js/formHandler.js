@@ -64,12 +64,13 @@ function handleSubmit(event) {
                 document.getElementById('irony').innerHTML = "";
             };
         })
-        console.log("::: Form Submitted :::");
-        console.log(formText);
-    } else {
-        alert("Please enter a valid URL");
-        console.log("Invalid URL");
-        }
+    }
+    //     console.log("::: Form Submitted :::");
+    //     console.log(formText);
+    // } else {
+    //     alert("Please enter a valid URL - FORM HANDLER");
+    //     console.log("Invalid URL");
+    //     }
             
         
 }
