@@ -5,6 +5,7 @@ dotenv.config();
 projectData = {};
 
 const fetch = require('node-fetch');
+const formData = require('form-data');
 
 var path = require('path')
 const express = require('express')
@@ -41,9 +42,9 @@ app.listen(8080, function () {
     console.log('Example app listening on port 8080!')
 })
 
-// app.get('/test', function (req, res) {
-//     res.send(mockAPIResponse)
-// })
+app.get('/test', function (req, res) {
+    res.send(mockAPIResponse)
+})
 
 //POST request
 app.post("/addData", async(req, res)=>{
