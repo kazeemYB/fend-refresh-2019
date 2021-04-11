@@ -5,10 +5,10 @@ const checkForName = (formText) => {
     if (res == null) {
         alert("Please enter a valid URL");
         console.log(`Invalid URL --> ${url}`);
-        document.querySelector('#invalid').innerHTML = 'Please Enter a Valid URL';
+        document.querySelector('#invalid').innerHTML = `Please Enter a Valid URL - (${url})`;
         return false;
     } else {
-        document.querySelector('#invalid').remove();
+        document.querySelector('#invalid').innerHTML = "";
         console.log(`Valid URL --> ${url}`);
         return true;
     }
