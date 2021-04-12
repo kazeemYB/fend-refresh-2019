@@ -1,9 +1,10 @@
 function handleSubmit(event) {
     event.preventDefault()
     
-    let formText = document.getElementById('url').value; 
+    let formText = document.getElementById('url').value;
+    const errorMessage = document.getElementById('errorMessage');
+    const lineBr = '<hr>';
    
-    
     // Checks inputed text in form
     if (Client.checkForName(formText)) {
     
@@ -64,15 +65,15 @@ function handleSubmit(event) {
                 document.getElementById('irony').innerHTML = "";
             };
         })
+        errorMessage.innerHTML = "";
+        document.getElementById("results_head").innerHTML = `Analyzing "${formText}" with MeaningCloud API.`;
+        document.getElementById("lineBr").innerHTML = lineBr;
+        console.log(`Valid URL -> ${formText}.`)
+    } else {
+        errorMessage.innerHTML = `Please Enter a Valid URL | For Example- https://www.example.com | This input (${formText}) is invalid.`;
+        console.log(errorMessage.innerHTML, `Invalid URL -> ${formText}.`)
     }
-    //     console.log("::: Form Submitted :::");
-    //     console.log(formText);
-    // } else {
-    //     alert("Please enter a valid URL - FORM HANDLER");
-    //     console.log("Invalid URL");
-    //     }
-            
-        
+    console.log("::: Form Submitted :::")
 }
 
 
