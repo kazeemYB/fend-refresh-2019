@@ -32,10 +32,12 @@
                     <input id="url" type="text" name="input" value="" onblur="blurFunction()" placeholder= "input the url of a blog/article here">
                     <input type="submit" name="" id="submit" value="Submit to Analyze" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
                 </form>
+                <div class="error_message" id="errorMessage"></div>
             </section>
 
             <section id="output_section">
-                <div id="results">FORM RESULTS:
+                <div id="results">FORM RESULTS: <span id="results_head"></span>
+                    <div id="lineBr"></div>
                     <div id="confidence"></div>
                     <div id="score_tag"></div>
                     <div id="agreement"></div>
